@@ -9,6 +9,11 @@
  </div>
 
   <div class="field">
+   <%= f.label :birthdate %><br />
+   <%= f.date_field :birthdate, autocomplete: "birthdate" %>
+  </div>
+
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autocomplete: "email" %>
   </div>
