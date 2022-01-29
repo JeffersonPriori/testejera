@@ -13,13 +13,11 @@ class CatchMovies
         result = HTTParty.get(url).parsed_response
         result["results"].each do |movie|
             Movie.new(title: movie["original_title"]).save
-            puts movie
-            puts "\n"
         end
-    end
 
-    if @page < 100
-        @page = @page+1
-        save_movies
+        if @page < 100
+            @page = @page+1
+            save_movies
+        end
     end
 end 

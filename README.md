@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Setup projeto
 
-Things you may want to cover:
+> Rails db:create db:migrate db:seed
 
-* Ruby version
+> OBSERVAÇÃO: RODE OS SEED PARA POPULAR OS SEEDS OU EXECUTE O SERVICE CatchMovies!
 
-* System dependencies
+> rails 7.0.1
 
-* Configuration
+> ruby 3.0.0
 
-* Database creation
+# o que foi feito!
 
-* Database initialization
+> login com devise 
 
-* How to run the test suite
+> cadastro com devise
 
-* Services (job queues, cache servers, search engines, etc.)
+> Listagem de filmes
 
-* Deployment instructions
+> Busca de filmes por nome
 
-* ...
+> Consumo de filmes pela API do the movies db

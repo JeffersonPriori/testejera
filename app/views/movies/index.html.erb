@@ -1,8 +1,13 @@
-<h1>Movies#index</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
+<h1>Listagem de filmes</h1>
 
+<%= form_tag movies_path, url: movies_path, method: :get do %>
+    <%= text_field_tag :query, params[:query], placeholder: 'Digite nome do filme' %>
+    <%= submit_tag 'Filtrar' %>
+<% end %>
 
-<% Movie.all.each do |movie| %>
+<br>
+
+<% @movies.each do |movie| %>
     <%= movie.title %> <br>
 <% end %>
 
